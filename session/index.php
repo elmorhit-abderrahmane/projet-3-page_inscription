@@ -8,31 +8,78 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="css/style.css">
 
   </head>
   <body>
-	  <div class="container" >
-		  <h3> IEVENT</h3>
-			<form action="affichage.php" method="POST" >
-			<div class="form-row">
-    <div class="form col-sm">
-      <label for="inputEmail4"> Nom</label>
-      <input type="text" class="form-control" id="inputEmail4" name="firstname" placeholder="First name">
+	  <!-- <div class="container" >
+    <div class="signupSection">
+        <h3> identifier</h3>
+        <form action="affichage.php" method="POST" >
+        <div class="form-row">
+      <div class="form col-sm">
+        <label for="inputEmail4"> Nom</label>
+        <input type="text" class="form-control" id="inputEmail4" name="nom" placeholder="nom">
+       
+      </div>
+      <div class="form col-sm">
+        <label for="inputPassword4">Prenom</label>
+        <input type="text" class="form-control" id="inputPassword4" name="Prenom" placeholder="Prenom">
+      </div>
+     
     </div>
     <div class="form col-sm">
-      <label for="inputPassword4">Prenom</label>
-      <input type="text" class="form-control" id="inputPassword4" name="lastname" placeholder="Last name">
+      <label for="inputAddress">Email</label>
+      <input type="email" class="form-control" id="inputAddress" name="email" placeholder="Example@gmail.col">
     </div>
-  </div>
-  <div class="form col-sm">
-    <label for="inputAddress">Email</label>
-    <input type="email" class="form-control" id="inputAddress" name="email" placeholder="Example@gmail.col">
-  </div>
-  <div class="form col-sm">
-				<button type="submit" class="btn btn-primary">Sign in</button>
-			  </form>
-   </div>
+    <br>
+    <br>
+ -->
+
+    <div class="container">
+    <div class="row">
+
+      <div class="signupSection">
+
+        <div class=" h2 mb-4">
+        <form action="affichage.php" method="POST" >
+          <h2>Sign Up</h2>
+        </div>
+        <ul class="noBullet">
+          <li>
+            <div class="li col-mb-4">
+              <label for="inputEmail4"></label>
+              <input type="text" class="inputFields" id="inputEmail4" name="nom" placeholder="nom" />
+            </div>
+          </li>
+          <li>
+            <div class="li col-mb-4">
+              <label for="inputPassword4"></label>
+              <input type="text" class="inputFields" id="inputPassword4" name="Prenom" placeholder="Prenom" />
+            </div>
+          </li>
+         
+          <li>
+            <div class="li col-mb-4">
+              <label for="password"></label>
+              <input type="text" class="inputFields" id="inputAddress" name="Tel" placeholder="Tel" />
+            </div>
+          </li>
+
+
+          <li>
+            <div class="li col-mb-4">
+              <label for="password"></label>
+              <input type="text" class="inputFields" id="inputAddress" name="email" placeholder="Example@gmail.com" />
+            </div>
+          </li>
+
+
+    <div class="form col-sm">
+          <button type="submit" class="btn btn-primary">soumettre</button>
+          </form>
+    </div>
+</div>
 </div>
 
 	  

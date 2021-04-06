@@ -7,25 +7,29 @@
  // Initialisation du tableau des participants
  $firstname = [];
  $lastname  = [];
+ $Tel     = [];
  $email     = [];
 
-
-
  // Trouver ou créer le tableau dans Session
- if( isset( $_SESSION['firstname'] ) ) {
-    $firstname =  $_SESSION['firstname'] ;
+ if( isset( $_SESSION['nom'] ) ) {
+    $firstname =  $_SESSION['nom'] ;
  }else {
-    $_SESSION['firstname'] =  $firstname;
+    $_SESSION['nom'] =  $firstname;
  }
 
- if( isset( $_SESSION['lastname'] ) ) {
-    $lastname =  $_SESSION['lastname'] ;
+ if( isset( $_SESSION['Prenom'] ) ) {
+    $lastname =  $_SESSION['Prenom'] ;
  }else {
-    $_SESSION['lastname'] =  $lastname;
+    $_SESSION['Prenom'] =  $lastname;
 }
+if( isset( $_SESSION['Tel'] ) ) {
+    $Tel =  $_SESSION['Tel'] ;
+ }else {
+    $_SESSION['Tel'] =  $Tel;
+ }
 
  if( isset( $_SESSION['email'] ) ) {
-    $email =  $_SESSION['firstname'] ;
+    $email =  $_SESSION['email'] ;
  }else {
     $_SESSION['email'] =  $email;
  }
@@ -33,17 +37,21 @@
 
 
  // Ajouter le nom du nom dans le tableau
- $firstname[] = $_POST["firstname"] ;
- $lastname[] = $_POST["lastname"] ;
+ $firstname[] = $_POST["nom"] ;
+ $lastname[] = $_POST["Prenom"] ;
+ $Tel[] = $_POST["Tel"] ;
  $email[] = $_POST["email"] ;
 
 
 
  // Enregistrer le tableau dans la session
-$_SESSION['firstname'] =  $firstname;
-$_SESSION['lastname'] =  $lastname;
+$_SESSION['nom'] =  $firstname;
+$_SESSION['Prenom'] =  $lastname;
+$_SESSION['Tel'] =  $Tel;
 $_SESSION['email'] =  $email;
 
+
+// session_destroy();
 
 ?>
 
@@ -61,7 +69,7 @@ $_SESSION['email'] =  $email;
 <body>
 
     <div class="row">
-    <div class="col-md-3">
+    <div class="col-lg-3 col-md-6">
 <h1>Nom</h1>
 <ol>
     <?php
@@ -73,8 +81,8 @@ $_SESSION['email'] =  $email;
     ?>  
 </ol>
 </div>
-<div class="col-md-3">
-<h1>Prnom</h1>
+<div class="col-lg-3 col-md-6">
+<h1>Prénom</h1>
 <ol>
     <?php
         foreach ($lastname as $value) { 
@@ -85,9 +93,26 @@ $_SESSION['email'] =  $email;
     ?>  
 </ol>
 </div>
-<div class="col-md-3">
+
+
+<div class="col-lg-3 col-md-6">
+<h1>Tel</h1>
+<ol>
+
+    <?php
+        foreach ($Tel as $value) { 
+        ?>
+        <li><?php echo $value ?></li>
+        <?php
+        }
+    ?>  
+</ol>
+</div>
+
+<div class="col-lg-3 col-md-6">
 <h1>Emails</h1>
 <ol>
+
     <?php
         foreach ($email as $value) { 
         ?>
@@ -98,7 +123,7 @@ $_SESSION['email'] =  $email;
 </ol>
 </div>
 </div>
-<button
+<button type="button" onclick="window.print()" > print</button>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
