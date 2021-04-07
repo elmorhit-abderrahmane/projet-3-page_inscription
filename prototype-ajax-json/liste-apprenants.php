@@ -6,18 +6,18 @@ $liste_apprenants = [];
 
  // Saisie des données
  $apprenant = new Apprenant;
- $apprenant->setNom("Madani 1");
- $apprenant->setPrenom("Ali");
+ $apprenant->setNom(" EL-MORHIT");
+ $apprenant->setPrenom("Abderrahmane");
  $liste_apprenants[] = $apprenant ;
 
  $apprenant = new Apprenant;
- $apprenant->setNom("Chami");
- $apprenant->setPrenom("Mouad");
+ $apprenant->setNom("EL YATIM");
+ $apprenant->setPrenom("Omar");
  $liste_apprenants[] = $apprenant ;
 
  $apprenant = new Apprenant;
- $apprenant->setNom("Madani");
- $apprenant->setPrenom("Fatima");
+ $apprenant->setNom("DAHRI");
+ $apprenant->setPrenom(" Fatima");
  $liste_apprenants[] = $apprenant ;
 
  // $age = array("Peter"=>35, "Ben"=>37, "Joe"=>43);
