@@ -12,29 +12,7 @@
 
   </head>
   <body>
-	  <!-- <div class="container" >
-    <div class="signupSection">
-        <h3> identifier</h3>
-        <form action="affichage.php" method="POST" >
-        <div class="form-row">
-      <div class="form col-sm">
-        <label for="inputEmail4"> Nom</label>
-        <input type="text" class="form-control" id="inputEmail4" name="nom" placeholder="nom">
-       
-      </div>
-      <div class="form col-sm">
-        <label for="inputPassword4">Prenom</label>
-        <input type="text" class="form-control" id="inputPassword4" name="Prenom" placeholder="Prenom">
-      </div>
-     
-    </div>
-    <div class="form col-sm">
-      <label for="inputAddress">Email</label>
-      <input type="email" class="form-control" id="inputAddress" name="email" placeholder="Example@gmail.col">
-    </div>
-    <br>
-    <br>
- -->
+
 
     <div class="container">
     <div class="row">
